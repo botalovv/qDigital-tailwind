@@ -10,28 +10,115 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="mx-auto w-[274px] bg-[#F5F5F5]">
-    <div class="">
-        <h1 class="font-bold text-[28px] leading-[38px] text-[#212121]">Все счета</h1>
+<body class="mx-auto w-[274px] bg-[#F5F5F5] md:w-[1088px]">
+    <div class="md:flex md:justify-between">
+        <h1 class="font-bold text-[28px] leading-[38px] text-[#212121] md:mt-[15px]">Все счета</h1>
         <button class="bg-[#7840B0;] text-white font-normal text-[15px] w-[144px] h-[38px] rounded mt-[13px]">Выставить счёт</button>
     </div>  
-    <div class="bg-white mt-[13px] mx-auto ">
-        <div class="font-normal text-[14px] leading-4 pl-[15px] pb-3 flex flex-col border-b-[1px] border-[#E8E8E8]">
-            <a href="#" class="pt-3 mb-4">Выставленные</a>
-            <a href="#" class="mb-4">К оплате</a>
-            <a href="#">История</a>
+    <div class="bg-white mt-[13px] mx-auto">
+        <div class="font-normal text-[14px] leading-4 pl-[15px] pt-3  pb-3 flex flex-col border-b-[1px] border-[#E8E8E8]  md:flex md:flex-row md:pl-5 md:pb-4 md:pt-4">
+            <a href="#" class="mb-4 md:mr-8 ">Выставленные</a>
+            <a href="#" class="mb-4 md:mr-8 ">К оплате</a>
+            <a href="#" class="">История</a>
         </div>
-        <div class="pl-3 pb-[11px] border-b-[1px]">
-            <select name="" id="" class="border-[1px] rounded w-[250px] h-10 mt-3 pl-[10px] pr-3 font-normal text-[14px] leading-[16px] ">
+        <div class="pl-3 pb-[11px] border-b-[1px] md:pl-4 md:border-0 md:pb-0">
+            <select name="" id="" class="border-[1px] rounded w-[250px] h-10 mt-3 pl-[10px] pr-3 font-normal text-[14px] leading-[16px] md:w-[260px] md:mr-2">
                 <option value="1">Все торговые точки и операции</option>
             </select>
-            <input type="text" placeholder="Поиск по номеру счета" class="mt-[13px] border-[1px] rounded w-[250px] h-10 font-normal text-[14px] leading-[16px] pl-[7px]">
-            <select name="" id="" class="mt-[13px] bg-[#E8E8E8] w-[250px] h-10 rounded pl-3">
+            <input type="text" placeholder="Поиск по номеру счета" class="mt-[13px] border-[1px] rounded w-[250px] h-10 font-normal text-[14px] leading-[16px] pl-[7px] md:w-[436px] md:mr-2">
+            <select name="" id="" class="mt-[13px] bg-[#E8E8E8] w-[250px] h-10 rounded pl-3 md:w-[168px] md:mr-2">
                 <option value="">Фильтры</option>
             </select>
-            <select name="" id="" class="mt-[13px] bg-[#E8E8E8] w-[250px] h-10 rounded pl-3 " disabled>
+            <select name="" id="" class="mt-[13px] bg-[#E8E8E8] w-[250px] h-10 rounded pl-3 md:w-[168px]" disabled>
                 <option value="">Действия</option>
             </select>
+        </div>
+        <div class="hidden md:flex md:h-[42px] md:font-medium md:text-xs md:leading-[18px] md:mt-7 md:text-[#25262D] md:border-b-[1px] pt-3 ">
+            <input type="checkbox" class="w-[16px] h-[16px] rounded-[3px] border-[#E3E7EE] ml-[15px]">
+            <div class="w-[73px] h-[18px] ml-4">
+                <p class="">Номер счета</p>
+            </div>
+            <div class="w-[109px] h-[18px] ml-[70px]">
+                <select name="" id="">
+                    <option value="">
+                        Время и дата
+                    </option>
+                </select>
+            </div>
+            <div class="w-[147px] h-[18px] ml-20">
+                <p>Торговая точка / Оперция</p>
+            </div>
+            <div class="w-[67px] h-[18px] ml-[53px]">
+                <select name="" id="">
+                    <option value="">
+                        Сумма
+                    </option>
+                </select>
+            </div>
+            <div class="w-[55px] h-[18px] ml-[58px]">
+                <p>Получено</p>
+            </div>
+            <div class="w-[102px] h-[22px] ml-[108px]">
+                <select name="" id="">
+                    <option value="">
+                        Статус
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="md:flex border-b-[1px] pt-3 pb-[11px] pl-3 md:h-[54px] md:py-[18px] md:pl-4">
+            <input type="checkbox" class="w-[16px] h-[16px] rounded-[3px] border-[#E3E7EE] hidden md:block">
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Номер счета</p>
+            <div class="md:w-[73px] md:h-[18px] md:ml-4 ">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">№32467</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Время и дата</p>
+            <div class="md:w-[109px] h-[18px] md:ml-[70px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">11:20 05.01.2019</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Торговая точка / Оперция</p>
+            <div class="md:w-[147px] md:h-[18px] md:ml-20">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">Smart Лазурный</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Сумма</p>
+            <div class="md:float-right md:w-[67px] md:h-[18px] md:ml-[53px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">1500тг</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Получено</p>
+            <div class="md:w-[55px] md:h-[18px] md:ml-[58px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D] md:font-bold">1350тг</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Статус</p>
+            <div class="w-[76px] h-[22px] bg-[#D7EBD3] rounded-[11px] md:ml-[108px]">
+                <p class="text-[#5BC044] font-medium text-xs leading-[14px] pt-[4px] pl-[10px] " >Оплачено</p>
+            </div>
+        </div>
+        <div class="md:flex border-b-[1px] pt-3 pb-[11px] pl-3 md:h-[54px] md:py-[18px] md:pl-4">
+            <input type="checkbox" class="w-[16px] h-[16px] rounded-[3px] border-[#E3E7EE] hidden md:block">
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Номер счета</p>
+            <div class="md:w-[73px] md:h-[18px] md:ml-4 ">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">№32466</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Время и дата</p>
+            <div class="md:w-[109px] h-[18px] md:ml-[70px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">21:18 02.01.2019</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Торговая точка / Оперция</p>
+            <div class="md:w-[147px] md:h-[18px] md:ml-20">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]">Smart Ишим</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Сумма</p>
+            <div class="md:float-right md:w-[67px] md:h-[18px] md:ml-[53px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D]"></p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Получено</p>
+            <div class="md:w-[55px] md:h-[18px] md:ml-[58px]">
+                <p class="font-medium text-[14px] leading-[18px] text-[#25262D] md:font-bold">1350тг</p>
+            </div>
+            <p class="md:hidden font-bold text-xs leading-[18px] text-[#25262D]">Статус</p>
+            <div сlass="md:ml-[108px]">
+                <p class="w-19 h-[22px] bg-[#FFD8D8] rounded-[11px] text-[#EE5B5B] font-medium text-xs leading-[14px] pt-[4px] pl-[10px]">Отклонено</p>
+            </div>
         </div>
     </div>
 </body>
